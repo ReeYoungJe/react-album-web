@@ -20,15 +20,15 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "baseUrl" : ".",
+    "baseUrl": ".",
     "paths": {
-      "@/*" : ["src/*"],
-      "@/assets" : ["src/assets/*"],
-      "@/components/*" : ["src/*"],
-      "@/pages/*" : ["src/pages/*"],
-      "@/types/*" : ["src/types/*"],
-      "@/recoil/*" : ["src/recoil/*"],
-      "@/apis/*" : ["src/apis/*"]
+      "@/*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@types/*": ["src/types/*"],
+      "@recoil/*": ["src/recoil/*"],
+      "@apis/*": ["src/apis/*"]
     },
     "noImplicitAny": false,
     "strictNullChecks": false
