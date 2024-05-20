@@ -1,6 +1,7 @@
 import styles from './styles/index.module.scss';
 import CommonHeader from "@/Component/Common/Header/CommonHeader.tsx";
 import CommonSerachBar from "@/Component/Common/SearchBar/CommonSerachBar.tsx";
+import CommonNav from "@/Component/Common/Navigation/CommonNav.tsx";
 
 function Index() {
 	return (
@@ -9,6 +10,7 @@ function Index() {
 				{/*공통헤더 UI 부분*/}
 				<CommonHeader/>
 				{/*공통 네이게이션 UI 부분*/}
+				<CommonNav/>
 				<div className={styles.page__contents}>
 					<div className={styles.page__contents__introBox}>
 						<div className={styles.wrap}>
