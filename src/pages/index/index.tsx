@@ -1,5 +1,6 @@
 import styles from './styles/index.module.scss';
 import CommonHeader from "@/Component/Common/Header/CommonHeader.tsx";
+import CommonSerachBar from "@/Component/Common/SearchBar/CommonSerachBar.tsx";
 
 function Index() {
 	return (
@@ -15,6 +16,7 @@ function Index() {
 							<span className={styles.wrap__desc}>인터넷 시각 자료 입니다</span>
 						</div>
 						{/*검색창 UI*/}
+						<CommonSerachBar/>
 					</div>
 				</div>
 				<div className={styles.page__contents__imageBox}>
