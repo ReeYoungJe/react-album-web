@@ -1,8 +1,11 @@
-import styles from './styles/index.module.scss';
 import CommonHeader from "@/Component/Common/Header/CommonHeader.tsx";
 import CommonSearchBar from "@/Component/Common/SearchBar/CommonSearchBar.tsx";
 import CommonNav from "@/Component/Common/Navigation/CommonNav.tsx";
 import CommonFooter from "@/Component/Common/Footer/CommonFooter.tsx";
+import Card from "@pages/index/components/Card.tsx";
+
+// CSS
+import styles from './styles/index.module.scss';
 
 function Index() {
 	return (
@@ -23,7 +26,12 @@ function Index() {
 						<CommonSearchBar/>
 					</div>
 				</div>
-				<div className={styles.page__contents__imageBox}></div>
+				<div className={styles.page__contents__imageBox}>
+					<Card/>
+					<Card/>
+					<Card/>
+					<Card/>
+				</div>
 			</div>
 			{/* 공통 푸터 UI 부분 */}
 			<CommonFooter/>
