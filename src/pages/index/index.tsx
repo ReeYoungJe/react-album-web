@@ -2,6 +2,7 @@ import styles from './styles/index.module.scss';
 import CommonHeader from "@/Component/Common/Header/CommonHeader.tsx";
 import CommonSearchBar from "@/Component/Common/SearchBar/CommonSearchBar.tsx";
 import CommonNav from "@/Component/Common/Navigation/CommonNav.tsx";
+import CommonFooter from "@/Component/Common/Footer/CommonFooter.tsx";
 
 function Index() {
 	return (
@@ -25,9 +26,8 @@ function Index() {
 				<div className={styles.page__contents__imageBox}></div>
 			</div>
 			{/* 공통 푸터 UI 부분 */}
+			<CommonFooter/>
 		</div>
-
-
 	);
 }
 
