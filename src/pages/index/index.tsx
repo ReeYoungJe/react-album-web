@@ -1,32 +1,30 @@
 import styles from './styles/index.module.scss';
 import CommonHeader from "@/Component/Common/Header/CommonHeader.tsx";
-import CommonSerachBar from "@/Component/Common/SearchBar/CommonSerachBar.tsx";
+import CommonSearchBar from "@/Component/Common/SearchBar/CommonSearchBar.tsx";
 import CommonNav from "@/Component/Common/Navigation/CommonNav.tsx";
 
 function Index() {
 	return (
-		<div>
-			<div className={styles.page}>
-				{/*공통헤더 UI 부분*/}
-				<CommonHeader/>
-				{/*공통 네이게이션 UI 부분*/}
-				<CommonNav/>
-				<div className={styles.page__contents}>
-					<div className={styles.page__contents__introBox}>
-						<div className={styles.wrap}>
-							<span className={styles.wrap__title}>photo splash</span>
-							<span className={styles.wrap__desc}>인터넷 시각 자료 입니다</span>
-						</div>
-						{/*검색창 UI*/}
-						<CommonSerachBar/>
+		<div className={styles.page}>
+			{/* 공통 헤더 UI 부분 */}
+			<CommonHeader/>
+			{/* 공통 네비게이션 UI 부분 */}
+			<CommonNav/>
+			<div className={styles.page__contents}>
+				<div className={styles.page__contents__introBox}>
+					<div className={styles.wrapper}>
+						<span className={styles.wrapper__title}>PhotoSplash</span>
+						<span className={styles.wrapper__desc}>
+                            인터넷의 시각 자료 출처입니다. <br/>
+                            모든 지역에 있는 크리에이터들의 지원을 받습니다.
+                        </span>
+						{/* 검색창 UI 부분 */}
+						<CommonSearchBar/>
 					</div>
 				</div>
-				<div className={styles.page__contents__imageBox}>
-
-				</div>
+				<div className={styles.page__contents__imageBox}></div>
 			</div>
-			{/*공통푸터 UI 부분*/}
-
+			{/* 공통 푸터 UI 부분 */}
 		</div>
 
 
@@ -34,4 +32,5 @@ function Index() {
 }
 
 export default Index;
+
 
