@@ -10,6 +10,7 @@
 6. TypeScript에서 Node.js 모듈을 쓸 수 있도록 도와주는 환경 구축 `yarn add @tyoe/node`
 7. React toast Popup 모듈 설치 `yarn add react-simple-toasts`
 8. 실행은 `yarn vite dev`
+9. 관리자 권한 `Set-ExecutionPolicy RemoteSigned`
 
 
 
