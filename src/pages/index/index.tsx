@@ -6,8 +6,25 @@ import Card from "@pages/index/components/Card.tsx";
 
 // CSS
 import styles from './styles/index.module.scss';
+import {useEffect} from "react";
 
 function Index() {
+	const getData =  async  ()=>{
+		const API_URL = 'https://api.unsplash.com/search/photos'
+		const API_KEY = 'TCUMH201dau3LQ80QTOPInw8VqjqFTUsDnA776J5410'
+		const PER_PAGE = '30'
+
+		const searchValue = 'korea'
+		const pageValue = 100
+
+		try{
+			const res = await axios.get(`${API_URL}?query=${searchValue}&client_id${API_KEY}&page=${pageValue}&per_page=${PER_PAGE}`)
+			console.log(res)
+		}catch(error){
+
+		}
+		useEffect()
+	}
 	return (
 		<div className={styles.page}>
 			{/* 공통 헤더 UI 부분 */}
